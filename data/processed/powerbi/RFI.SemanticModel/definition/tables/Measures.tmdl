@@ -1,0 +1,58 @@
+table Measures
+
+	measure 'Total RFIs' = COUNTROWS ( fact_rfi )
+		formatString: #,0
+
+	measure 'Answered RFIs' = CALCULATE ( [Total RFIs], fact_rfi[status] = "Answered" )
+		formatString: #,0
+
+	measure 'Open RFIs' = CALCULATE ( [Total RFIs], fact_rfi[status] = "Open" )
+		formatString: #,0
+
+	measure 'Response Rate' = DIVIDE ( [Answered RFIs], [Total RFIs] )
+		formatString: 0.0%
+
+	measure 'Document Update RFIs' = CALCULATE ( [Total RFIs], fact_rfi[document_update_required] = "Yes" )
+		formatString: #,0
+
+	measure 'Disciplines Used' = DISTINCTCOUNT ( fact_rfi[discipline_key] )
+		formatString: #,0
+
+	measure 'Drawing Update RFIs' = CALCULATE ( [Total RFIs], fact_rfi[drawing_update_required] = "Yes" )
+		formatString: #,0
+
+	measure 'Spec Update RFIs' = CALCULATE ( [Total RFIs], fact_rfi[spec_update_required] = "Yes" )
+		formatString: #,0
+
+	measure 'Both Updates RFIs' = CALCULATE ( [Total RFIs], fact_rfi[drawing_update_required] = "Yes", fact_rfi[spec_update_required] = "Yes" )
+		formatString: #,0
+
+	measure 'No Update RFIs' = CALCULATE ( [Total RFIs], fact_rfi[document_update_required] = "No" )
+		formatString: #,0
+
+	measure 'Unknown Update RFIs' = CALCULATE ( [Total RFIs], fact_rfi[document_update_required] = "Unknown" )
+		formatString: #,0
+
+	measure 'Drawing Conflict RFIs' = CALCULATE ( [Total RFIs], dim_issue_type[issue_type_name] = "Drawing Conflict" )
+		formatString: #,0
+
+	measure 'Specification Issue RFIs' = CALCULATE ( [Total RFIs], dim_issue_type[issue_type_name] = "Specification Clarification" )
+		formatString: #,0
+
+	measure 'Avg Question Words' = AVERAGE ( fact_rfi[question_word_count] )
+		formatString: #,0.0
+
+	measure 'Avg Response Words' = AVERAGE ( fact_rfi[response_word_count] )
+		formatString: #,0.0
+
+	column Measures
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: Measures
+
+	partition Measures = calculated
+		mode: import
+		source = ```
+				ROW ( "Measures", BLANK () )
+			```

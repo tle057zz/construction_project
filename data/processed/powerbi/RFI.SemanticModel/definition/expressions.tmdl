@@ -1,0 +1,2 @@
+/// Folder containing fact_rfi.csv and the four dimension CSVs. Change this to the Windows folder before refresh if Power BI cannot see the Mac path.
+expression DataFolder = "/Users/thanhle/Library/CloudStorage/GoogleDrive-lenhothanh.nsl@gmail.com/Other computers/My Mac/thanhle_drive/construction_project/data/processed/powerbi/" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]

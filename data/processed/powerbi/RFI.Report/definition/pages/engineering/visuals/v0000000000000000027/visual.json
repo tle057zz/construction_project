@@ -1,0 +1,119 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "v0000000000000000027",
+  "position": {
+    "x": 20,
+    "y": 386,
+    "z": 1000,
+    "height": 318,
+    "width": 1240,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_discipline"
+                    }
+                  },
+                  "Property": "discipline_name"
+                }
+              },
+              "queryRef": "dim_discipline.discipline_name",
+              "nativeQueryRef": "Discipline"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_issue_type"
+                    }
+                  },
+                  "Property": "issue_type_name"
+                }
+              },
+              "queryRef": "dim_issue_type.issue_type_name",
+              "nativeQueryRef": "Issue type"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures"
+                    }
+                  },
+                  "Property": "Total RFIs"
+                }
+              },
+              "queryRef": "Measures.Total RFIs",
+              "nativeQueryRef": "Total RFIs"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures"
+                    }
+                  },
+                  "Property": "Avg Question Words"
+                }
+              },
+              "queryRef": "Measures.Avg Question Words",
+              "nativeQueryRef": "Avg Question Words"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Measures"
+                  }
+                },
+                "Property": "Total RFIs"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Questions by technical topic'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

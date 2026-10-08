@@ -1,0 +1,189 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "v0000000000000000048",
+  "position": {
+    "x": 20,
+    "y": 108,
+    "z": 1000,
+    "height": 596,
+    "width": 1240,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_rfi"
+                    }
+                  },
+                  "Property": "rfi_id"
+                }
+              },
+              "queryRef": "fact_rfi.rfi_id",
+              "nativeQueryRef": "RFI ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_date"
+                    }
+                  },
+                  "Property": "date_received"
+                }
+              },
+              "queryRef": "dim_date.date_received",
+              "nativeQueryRef": "Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_party"
+                    }
+                  },
+                  "Property": "party_name"
+                }
+              },
+              "queryRef": "dim_party.party_name",
+              "nativeQueryRef": "From"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_tasked_party"
+                    }
+                  },
+                  "Property": "party_name"
+                }
+              },
+              "queryRef": "dim_tasked_party.party_name",
+              "nativeQueryRef": "Tasked to"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_discipline"
+                    }
+                  },
+                  "Property": "discipline_name"
+                }
+              },
+              "queryRef": "dim_discipline.discipline_name",
+              "nativeQueryRef": "Discipline"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_issue_type"
+                    }
+                  },
+                  "Property": "issue_type_name"
+                }
+              },
+              "queryRef": "dim_issue_type.issue_type_name",
+              "nativeQueryRef": "Issue type"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_rfi"
+                    }
+                  },
+                  "Property": "status"
+                }
+              },
+              "queryRef": "fact_rfi.status",
+              "nativeQueryRef": "Status"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_rfi"
+                    }
+                  },
+                  "Property": "Document Impact"
+                }
+              },
+              "queryRef": "fact_rfi.Document Impact",
+              "nativeQueryRef": "Document update"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_rfi"
+                    }
+                  },
+                  "Property": "Question Summary"
+                }
+              },
+              "queryRef": "fact_rfi.Question Summary",
+              "nativeQueryRef": "Question summary"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fact_rfi"
+                  }
+                },
+                "Property": "rfi_id"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'RFI register'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

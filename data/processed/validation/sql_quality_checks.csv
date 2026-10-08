@@ -1,0 +1,7 @@
+check,result,detail
+fact_row_count,PASS,107 rows
+duplicate_rfi_id,PASS,0 duplicated identifiers
+rfi_id_sequence,PASS,RFI-001 to RFI-107
+missing_dimension_keys,PASS,0 facts missing a dimension key
+blank_question,PASS,0 blank
+invalid_status,PASS,0 outside Answered and Open

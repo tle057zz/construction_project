@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Engineering RFI Analytics & AI Platform</title>
+  <style>
+    :root {
+      --bg-dark: #0a0f1d;
+      --card-bg: rgba(15, 23, 42, 0.75);
+      --card-border: rgba(56, 189, 248, 0.15);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent-blue: #38bdf8;
+      --accent-cyan: #06b6d4;
+      --accent-green: #34d399;
+      --grid-line: rgba(56, 189, 248, 0.04);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+      /* Decorative Blueprint Grid Background */
+      background-image: 
+        linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px),
+        radial-gradient(circle at 50% 0%, rgba(14, 165, 233, 0.12) 0%, transparent 60%);
+      background-size: 32px 32px, 32px 32px, 100% 100%;
+      background-attachment: fixed;
+      padding-bottom: 80px;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Hero Section with Microgrid Image Background Overlay */
+    .hero {
+      position: relative;
+      border-radius: 20px;
+      margin-top: 32px;
+      padding: 64px 48px;
+      overflow: hidden;
+      border: 1px solid var(--card-border);
+      background: linear-gradient(135deg, rgba(10, 15, 29, 0.94) 30%, rgba(15, 23, 42, 0.8) 100%),
+                  url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1920&q=80') center/cover;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-weight: 500;
+      background: rgba(14, 165, 233, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: var(--accent-blue);
+    }
+
+    .badge-green {
+      background: rgba(52, 211, 153, 0.12);
+      border-color: rgba(52, 211, 153, 0.3);
+      color: var(--accent-green);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      background: linear-gradient(to right, #ffffff, #94a3b8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 800px;
+      margin-bottom: 28px;
+    }
+
+    /* KPI Grid */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 32px 0;
+    }
+
+    .kpi-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 24px;
+      position: relative;
+    }
+
+    .kpi-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+
+    .kpi-value {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ffffff;
+      font-family: ui-monospace, monospace;
+    }
+
+    .kpi-sub {
+      font-size: 0.8rem;
+      color: var(--accent-blue);
+      margin-top: 6px;
+    }
+
+    /* Architecture Flow Strip */
+    .pipeline-strip {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin-bottom: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.85rem;
+      font-family: ui-monospace, monospace;
+    }
+
+    .pipe-step {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-main);
+    }
+
+    .pipe-arrow {
+      color: var(--accent-blue);
+      font-size: 1.2rem;
+    }
+
+    /* Content Layout */
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 40px 0 20px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-title::before {
+      content: "";
+      width: 4px;
+      height: 24px;
+      background: var(--accent-blue);
+      border-radius: 2px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 24px;
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 12px;
+      color: var(--accent-blue);
+    }
+
+    .card ul {
+      list-style-type: none;
+    }
+
+    .card ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .card ul li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: var(--accent-cyan);
+    }
+
+    /* Technical Scope Table */
+    .table-container {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      overflow-x: auto;
+      margin-top: 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      padding: 16px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    th {
+      background: rgba(30, 41, 59, 0.5);
+      color: #ffffff;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Hero Banner -->
+    <header class="hero">
+      <div class="badge-row">
+        <span class="badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          USACE Sol. W912DS26BA032
+        </span>
+        <span class="badge">JBMDL Microgrid Project</span>
+        <span class="badge badge-green">Status: Analytical & AI Pipeline Active</span>
+      </div>
+      <h1>Digital Engineering RFI Analytics & AI Platform</h1>
+      <p>Transforming unstructured construction RFIs into governed digital intelligence, automated discipline classification, document-impact prediction, and vector-grounded Copilot querying.</p>
+    </header>
+
+    <!-- Architecture Pipeline Strip -->
+    <div class="pipeline-strip" style="margin-top: 24px;">
+      <div class="pipe-step"><span>01. Ingestion (Python)</span></div>
+      <div class="pipe-arrow">&rarr;</div>
+      <div class="pipe-step"><span>02. SQL Data Model</span></div>
+      <div class="pipe-arrow">&rarr;</div>
+      <div class="pipe-step"><span>03. Power BI Dashboards</span></div>
+      <div class="pipe-arrow">&rarr;</div>
+      <div class="pipe-step"><span>04. Databricks Lakehouse</span></div>
+      <div class="pipe-arrow">&rarr;</div>
+      <div class="pipe-step"><span style="color:var(--accent-green);">05. MLflow & AI Copilot</span></div>
+    </div>
+
+    <!-- KPI Metric Cards -->
+    <section class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">Dataset Records</div>
+        <div class="kpi-value">111</div>
+        <div class="kpi-sub">Original USACE RFI Logs</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Engineering Disciplines</div>
+        <div class="kpi-value">10+</div>
+        <div class="kpi-sub">Electrical, SCADA, Civil, etc.</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">ML & AI Deliverables</div>
+        <div class="kpi-value">3 Models</div>
+        <div class="kpi-sub">Discipline, Issue & Document Impact</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Semantic Search</div>
+        <div class="kpi-value">Databricks</div>
+        <div class="kpi-sub">Vector Search + AI Copilot</div>
+      </div>
+    </section>
+
+    <!-- Project Scope & Deliverables -->
+    <h2 class="section-title">Technical Architecture & Stack Breakdown</h2>
+    <div class="card-grid">
+      
+      <div class="card">
+        <h3>1. Data Engineering & Storage</h3>
+        <ul>
+          <li><strong>Source Ingestion:</strong> Python pipeline reading federal procurement logs with header detection.</li>
+          <li><strong>Relational DB:</strong> PostgreSQL star schema (`dim_party`, `dim_discipline`, `fact_rfi`).</li>
+          <li><strong>Lakehouse Architecture:</strong> Databricks Bronze, Silver, and Gold Delta tables.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>2. Analytics & BI Reporting</h3>
+        <ul>
+          <li><strong>Executive Overview:</strong> Status distributions, response rates, and submitter trends.</li>
+          <li><strong>Engineering Deep-Dive:</strong> Breakdown by system (BESS, Natural Gas, SCADA).</li>
+          <li><strong>Document Control Impact:</strong> Tracking drawing and specification amendment requirements.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>3. AI Models & Model Registry</h3>
+        <ul>
+          <li><strong>Discipline Classifier:</strong> TF-IDF / embeddings predicting technical discipline.</li>
+          <li><strong>Document Impact Model:</strong> Predicts drawing & spec update triggers from free text.</li>
+          <li><strong>Experiment Tracking:</strong> Parameter logging and registration through MLflow.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>4. Generative AI & Semantic Copilot</h3>
+        <ul>
+          <li><strong>Abstractive Summarisation:</strong> High-precision technical summarisation of lengthy RFIs.</li>
+          <li><strong>Vector Retrieval:</strong> Semantic search indexing for non-keyword similarity lookups.</li>
+          <li><strong>RFI Copilot:</strong> Structured tool-calling agent with strict grounding guardrails.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Core Engineering Disciplines Covered -->
+    <h2 class="section-title">Enriched Technical Classification Scope</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Discipline Area</th>
+            <th>Primary Engineering Focus</th>
+            <th>Impact Target</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="color:var(--accent-blue); font-weight:600;">Electrical & Power</td>
+            <td>Battery Energy Storage Systems (BESS), solar PV, switchgear</td>
+            <td>Spec & Single-Line Updates</td>
+          </tr>
+          <tr>
+            <td style="color:var(--accent-blue); font-weight:600;">Controls / SCADA</td>
+            <td>Cybersecurity, network architecture, telemetry integration</td>
+            <td>Interface Matrix Revisions</td>
+          </tr>
+          <tr>
+            <td style="color:var(--accent-blue); font-weight:600;">Mechanical & Utilities</td>
+            <td>Natural gas distribution, routing, piping alignments</td>
+            <td>Civil/Mechanical Conflicts</td>
+          </tr>
+          <tr>
+            <td style="color:var(--accent-blue); font-weight:600;">Quality & Compliance</td>
+            <td>Protective coatings, special inspections, USACE specs</td>
+            <td>Specification Clarifications</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</body>
+</html>

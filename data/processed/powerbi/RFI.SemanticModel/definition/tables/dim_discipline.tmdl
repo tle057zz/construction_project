@@ -1,0 +1,21 @@
+table dim_discipline
+	column discipline_key
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: discipline_key
+	column discipline_name
+		dataType: string
+		summarizeBy: none
+		sourceColumn: discipline_name
+	partition dim_discipline = m
+		mode: import
+		source = ```
+				let
+					FilePath = #"DataFolder" & "dim_discipline.csv",
+					Source = Csv.Document(File.Contents(FilePath), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					Typed = Table.TransformColumnTypes(Promoted, {{"discipline_key", Int64.Type}, {"discipline_name", type text}})
+				in
+					Typed
+			```

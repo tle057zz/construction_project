@@ -1,0 +1,11 @@
+column,total_rows,non_blank,blank,blank_percent
+rfi_number,112,112,0,0.0
+from_party,112,107,5,4.46
+tasked_to,112,107,5,4.46
+date_received,112,107,5,4.46
+question,112,107,5,4.46
+response,112,99,13,11.61
+notes,112,72,40,35.71
+status_raw,112,0,112,100.0
+source_file,112,112,0,0.0
+ingestion_timestamp,112,112,0,0.0

@@ -1,0 +1,772 @@
+rfi_number,from_party,tasked_to,date_received,question,response,notes,status_raw,source_file,ingestion_timestamp
+1,"Schweitzer Engineering Laboratories, Inc.",JBMDL,46266,"The specifications identify approved electric meter models for AMRS integration. Would the Government accept the SEL-735 Power Quality and Revenue Meter as a U.S. manufactured equivalent, subject to the Contractor demonstrating compliance with all applicable metering, communications, cybersecurity, and AMRS compatibility requirements through the specified submittal and approval process?","Only the meters that are explicitly listed in the Meter Data Management Plan will be authorized on the network by the Air Force Civil Engineer Center who oversees the entire AMRS network. So unfortunately no, that meter cannot be used.
+
+JBMDL preference is for the Siemens 9410 meter. An alternative option is the Schneider 8650. However, we were recently informed that this meter will no longer be manufactured.",,,rfi_log.xlsx,2026-10-04 00:53:24
+2,Willdan,AE,46267,"Battery Energy Storage System Capacity Discrepancy
+The solicitation appears to contain conflicting BESS sizing information.
+The drawings identify three Battery Energy Storage Systems rated at approximately 500 kW / 500 kWh each (total nominal capacity approximately 1.5 MWh).
+However, Specification Section 26 37 appears to identify each BESS as approximately 500 kW / 1.5 MWh (total nominal capacity approximately 4.5 MWh).
+Question:
+Please confirm the required BESS power rating and energy-storage capacity for:
+•	each individual BESS unit,
+•	total system power capacity,
+•	total system energy capacity.
+Reason for clarification:
+The discrepancy materially affects equipment selection, footprint, fire protection requirements, controls integration, commissioning requirements, and project pricing.","Each individual BESS: 500KW/KWH
+Total System Power Capacity: 1.5MW
+Total System Energy Capacity: 1.5MWH
+
+Spec section to be updated for clarity",Updated spec/dwg included,,rfi_log.xlsx,2026-10-04 00:53:24
+3,Willdan,CT,46267,"Applicable Davis-Bacon Wage Determination
+The solicitation references a wage determination associated with Burlington County, New Jersey.
+The project site appears to be located at Joint Base McGuire-Dix-Lakehurst in Ocean County, New Jersey.
+Question:
+Please confirm the applicable Davis-Bacon wage determination for this project and whether the current wage determination reference is correct.","The Government acknowledges the inquiry regarding the geographic location of the project site at Joint Base McGuire-Dix-Lakehurst.
+
+To ensure compliance with the Davis-Bacon Act and physical project requirements, the Government is issuing a revised Wage Determination. General Decision Number NJ20260039, dated 05/18/2026, for Ocean County, New Jersey, is hereby incorporated into this solicitation under Amendment 0004. Offerors must utilize these revised rates when preparing and submitting their final proposals.",,,rfi_log.xlsx,2026-10-04 00:53:24
+4,Willdan,CT/PM,46267,"Site Walk Date Clarification
+The solicitation references a site visit as occurring on ""Friday, 03 September 2026.""
+However, 03 September 2026 falls on a Thursday.
+Question:
+Please confirm the official date and time of the site walkthrough.",Walk thru was held 9/3/26.,,,rfi_log.xlsx,2026-10-04 00:53:24
+5,Willdan,AE/JBMDL,46267,"Existing SCADA Integration Requirements
+The specifications reference integration between the new microgrid control system and existing installation systems.
+Question:
+Please identify:
+·         Existing SCADA platform manufacturer
+·         Existing SCADA software version
+·         Existing communication protocols
+·         Existing cybersecurity boundary requirements
+Will interface control documentation be made available to the successful contractor after award?","Concerning existing cybersecurity boundary requirements; Any connections to the existing base EMCS must be coordinated with and approved by the JBMDL CECS ISSM (Christopher Loosa).    JBMDL:currently, we do not have the information for the Scada system. Its still in engineering and being installed",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+6,Willdan,AE/JBMDL,46267,"Cybersecurity / RMF Requirements
+The specifications include multiple references to cybersecurity support and RMF activities.
+Question:
+Please clarify:
+·         Required contractor cybersecurity deliverables
+·         Expected contractor participation in RMF activities
+·         Authority-to-Operate support requirements
+·         Government-furnished versus contractor-developed documentation responsibilities
+ Cybersecurity / RMF Requirements
+The specifications include multiple references to cybersecurity support and RMF activities.
+Question:
+Please clarify:
+·         Required contractor cybersecurity deliverables
+·         Expected contractor participation in RMF activities
+·         Authority-to-Operate support requirements
+·         Government-furnished versus contractor-developed documentation responsibilities","The contractor/vendor will not be responsible for the ATO. The contractor’s/vendor’s responsibility is to deliver a hardened system in accordance with the UFC 4-010-06 and UFGS 25 05 11’s to support the System Owners ATO efforts. UFGS 25 05 11.01, 25 05 11.05 and 25 05 11.06 provide the cybersecurity requirements for the contractor. The documentation requirements for cybersecurity shall be IAW the UFGS 25 05 11.01, 25 05 11.05 and 25 05 11.06 and its requirted submittals.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+7,Willdan,CT,46267,"CPARS and Past Performance Questionnaires (PPQs)
+The Supplementary Instructions to Bidders references Contractor Representatives are responsible for reviewing and commenting on evaluations submitted on the Contractor Performance Assessment Reporting System
+Question:
+If a contractor does not have prime contractor CPARS ratings in the CPARS system, is an alternative available to submit PPQs from completed work not in CPARS.  If so, please provide direction.","This solicitation is an Invitation for Bid (IFB), and the award will be made to the responsible bidder with the lowest responsive bid. As per Federal Acquisition Regulation (FAR) Part 9, the Government will assess contractor responsibility, which includes a satisfactory performance record. While the Government primarily uses the Contractor Performance Assessment Reporting System (CPARS) to review past performance, contractors without CPARS ratings may be asked to provide information from which their past performance can be evaluated. If requested by the Contracting Officer, you may be required to furnish information on past performance, which could include Past Performance Questionnaires (PPQs) for recent and relevant projects.",,,rfi_log.xlsx,2026-10-04 00:53:24
+8,"DAVID BOLAND, INC",AE,46269,"Spec:  09 06 00 – Schedules for Finishes, 09 90 00 – Paints and Coatings
+
+Question: Paragraph 1.6.3 of Section 09 90 00 of the specifications requires the use of an SSPC QP 1 certified painter.  Paragraph 2.3 of Section 09 60 00 of the specifications requires the use of an MPI 163 approved product for this project. MPI 163 is a Water-Based Emulsion, Semi-Gloss (MPI Gloss Level 5) Paint, suitable for both industrial and architectural exterior wood & metal surfaces. 
+
+SSPC QP 1 certified painters are certified to perform field coating applications on complex industrial and marine structures such as bridges, offshore drilling platforms, wastewater treatment facilities, and storage tanks. They are typically large metal structures requiring abrasive blast cleaning and spray painting.  Additionally, the UFGS 09 90 00 – Paints and Coatings provides guidance for the designer, stating, “Use bracket option below concerning SSPC QR 1 only when industrial coatings are required”. 
+
+The painting work on this project does not seem to fall within the category of structures typically reserved for the requirements of SSPC QP 1. Additionally, This requirement will prohibit local experienced, small business painting subcontractors from being able to perform the work and will result in a substantial increase in the cost of this work, which will be reflected in the prime contractors’ bids submitted to the Government. 
+
+Based on the explanations provided above, will the Government please remove the requirement for the use of SSPC QP 1 certified painting contractors from the specifications for this project?","Concur, will strike the requirement for SSPC QP 1.",Updated spec/dwg included,,rfi_log.xlsx,2026-10-04 00:53:24
+9,"DAVID BOLAND, INC",AE,46269,"Spec:  01 45 35 Special Inspections
+
+Question: Subpart 1.2 of Section 01 45 35 of the specifications states that the “Schedule of Special Inspections” is included as an attachment to the specification section; however, it is not attached. Instead, there are duplicate copies of the “Statement of Special Inspections” (as Attachments A and B). Please provide bidders with the “Schedule of Special Inspections.”","Concur, this attachment has been sent to USACE for inclusion in the documents.",Correct attachment sent to USACE for inclusion in the set.,,rfi_log.xlsx,2026-10-04 00:53:24
+10,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Structural
+Sheet: S-501
+Detail: K15
+Spec:  
+
+Question: On Sheet S-501 Detail K15 calls out a typical exterior pad detail. Note 2 of this detail reads, “Dimension in any horizontal direction shall not exceed 11’-0””. Detail A1 on Sheet S-501 gives the equipment pad detail for the BESS and Generators. 
+
+The 16’ x 20’ Electrical Equipment Pad on Sheet CS111 and the 5’ x 15’ Electrical Switchgear Pad on Sheet CS112 are both too large to use the Typical Exterior Pad Detail. They are also neither the BESS or Generator.
+
+Will the Government please clarify which Detail should be used for the Electrical Equipment Pad and Switchgear Pad?",Detail K15 on sheet S-501 is to be used for Electrical Equipment Pad and Switchgear Pad,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+11,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Civil / Mechanical
+Sheet: CS112 & M-501
+Detail: 
+Spec:  
+
+Question: Sheet CS112 shows a 2” Natural Gas Line. Sheet M-501 Detail J14 calls out a 4” Natural Gas Line. Sheet CS112 also calls out an underground electric line as “Gas Line”
+
+Will the Government please clarify if the Natural Gas Line is to be 2” or 4” and correct the “Gas Line” call-out?","Confirmed 2"".  Gas line callout on CS112 is indicated correctly.",Updated spec/dwg included,,rfi_log.xlsx,2026-10-04 00:53:24
+12,"DAVID BOLAND, INC",USACE DB,46269,"1.	Discipline:  Contracting
+Sheet: 
+Detail: 
+Spec:  01 58 00 – Project Identification
+
+Question: With regard to the Project Identification Sign on this project, Paragraph 1.4 of Section 01 58 00 of the specifications states, “Construct the sign in accordance with project sign detail, which can be downloaded at: http://www.wbdg.org/ffc/dod/unified-facilities-guide-specifications-ufgs/forms-graphics-tables.” 
+
+This link is broken and does not load. However, when navigating to the Whole Building Design Guide (WBDG) and navigating to the UFGS Forms, Graphics, and Tables page the project sign details that are available show many different sizes and styles of signs depending on the type of MILCON project and do not address a project safety sign at all. 
+
+Paragraph 1.4.1 also mentions both Navy and Air Force and refers to the signs being, “created in the design indicated,”  
+
+Paragraph 1.4.3 of Section 01 58 00 of this same specification refers us to EP 310-1-6a for the “construction project sign package.”
+
+Will the Government please confirm our assumption that we are to utilize Publication EP-310-a-6a for the typical construction project sign package.  Additionally, if we are to utilize the WBDG sign details please provide the exact sign type, size, and style required including the correct decal identification required.","Follow the link provided in https://www.wbdg.org/dod/ufgs/ufgs-01-58-00 for Project sign details, attachment A. Refer to EP-310-a-6a, section 16-1, 16-2 and 16-3, 16-4 for Project safe sign and related requirements. 
+
+Para 1.4.1 is referring to the logo. Please download the zip folder in the link provided to correctly locate the Air Force Logo.",,,rfi_log.xlsx,2026-10-04 00:53:24
+13,"DAVID BOLAND, INC",CT,46269,"1.	Discipline:  Contacting
+Sheet: 
+Detail: 
+Spec:  
+
+Question: General Decision Number: NJ20260027 /7/28/2026 provided in the Solicitation is for the County of Burlington, NJ. Since this location of the Joint Base is located in Ocean County New Jersey, will the Government please provide the General Decision Number for Ocean County.","The Government acknowledges the inquiry regarding the geographic location of the project site at Joint Base McGuire-Dix-Lakehurst.
+
+To ensure compliance with the Davis-Bacon Act and physical project requirements, the Government is issuing a revised Wage Determination. General Decision Number NJ20260039, dated 05/18/2026, for Ocean County, New Jersey, is hereby incorporated into this solicitation under Amendment 0004. Offerors must utilize these revised rates when preparing and submitting their final proposals.",,,rfi_log.xlsx,2026-10-04 00:53:24
+14,"DAVID BOLAND, INC",PM,46269,"1.	Discipline:  Contracting
+Sheet: 
+Detail: 
+Spec:  Standard Form 1442
+
+Question:  The solicitation provides 720 calendar days from the Notice to Proceed (“NTP”) to complete the project.
+
+As the Government is aware, there is a substantial amount of specialized equipment and material that will be required to be provided by the Contractor, much of which will require a substantial amount of time to prepare/review/approve submittals and then fabricate and deliver before the physical work, integration, start-up, check-out, testing, and commissioning can be performed.  Much of this specialized equipment and material will require months (and in some cases, over a year) to procure after approval of the submittals.
+
+It is understood that the Contractor will be required to diligently begin the preparation/review/submission of the submittals upon the Government’s issuance of the NTP so that the fabrication of the equipment and materials required for the project will begin as soon as possible.
+
+Will the Government allow the Contractor to schedule its physical mobilization to the project site and be able to schedule the commencement of the physical work commensurate with (and coordinated with) the delivery of the long lead-time equipment and materials, as well as the duration required to perform and complete the physical work and commissioning activities by no later than the contract completion date?","The contractor is required to submit all required documents, plans, initial schedule submissions and more (follow the specifications) for approval and in coordination with the contracting officers representative many of which are requried prior to mobilization. Follow the specifications as its written.",,,rfi_log.xlsx,2026-10-04 00:53:24
+15,"DAVID BOLAND, INC",CT,46269,"1.	Discipline:  Contracting
+Sheet: 
+Detail: 
+Spec:  Standard Form 1442
+
+Question:  Will the Government please clarify the DPAS (Defense Priorities and Allocations System) rating for this contract?","The solicitation does not currently assign a Defense Priorities and Allocations System (DPAS) rating to this contract. If a DPAS rating becomes necessary during the performance of the contract, it will be incorporated by the Contracting Officer via a contract modification.",,,rfi_log.xlsx,2026-10-04 00:53:24
+16,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Civil
+Sheet: 
+Detail: 
+Spec:  Section 32 31 13 – Chain Link Fences and Gates
+
+Question:  Subpart 2.2.1 – Fabric of Section 32 31 13 of the specifications states, “Provide fabric consisting of wires woven into a 1 inch diamond mesh.”
+
+It is unusual for the Government to specify “1-inch” mesh for this particular application of chain-link fences and gates; “2-inch” mesh is more commonly specified.
+
+Will the Government please confirm that “1-inch diameter mesh” is in fact required for the permanent chain-link fences and gates for this project?",2-inch diameter mesh is acceptable for use on this project. Specification to be updated accordingly.,Updated spec/dwg included,,rfi_log.xlsx,2026-10-04 00:53:24
+17,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Civil
+Sheet:  CS112
+Detail: 
+Spec: 
+
+Question:  There are existing pavement markings located where the existing asphalt pavement is required to be cut and patched for the electrical duct bank routed between the existing electrical manhole (“A7”) and the new pad-mounted medium voltage switch (“SW-1”).
+
+Is the Contractor required to patch these existing pavement markings and, if so, are the pavement markings required to be paint or thermoplastic?","Note added to CS112: ""Replace pavement markings in kind with marking materials that meet NJDOT specifications.""",Updated spec/dwg included,,rfi_log.xlsx,2026-10-04 00:53:24
+18,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Civil
+Sheet:  CD111
+Detail: 
+Spec: 
+
+Question:  General Sheet Note 4 on Sheet ID CD111 of the contract drawings states, “Prior to installation of PV array, remove all vegetation from paved surfaces, apply weed repellent and seal all cracks in existing pavement.”
+
+Will the Government please provide the bidders with the assumed quantity (i.e., linear feet) of cracks that will require sealing for which the bidders are to base their bids?","Assume 6,000 LF of crack sealing in existing pavement area.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+19,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Civil
+Sheet: 
+Detail: 
+Spec:  Section 32 11 26 – Hot-Mix Bituminous Base Course for Roads and Streets
+
+Question:  Subpart 2.5 – Recycled Asphalt Pavement of Section 32 11 26 of the specifications states, “RAP is not permitted.”
+
+Will the Government please confirm that recycled asphalt pavement is in fact not permitted for the base course asphalt for this project?","Confirmed, RAP is not permitted for use on this project.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+20,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet: 
+Detail: 
+Spec:  Section 26 08 00 – Apparatus Inspection and Testing
+
+Question:  Subpart 1.4.1 – Qualifications of Section 26 08 00 of the specifications states, “Organization must be independent of the supplier, manufacturer, and installer of the equipment.  The organization must be a first-tier subcontractor.  No work required by this section of the specification may be performed by a second-tier subcontractor.”
+
+Will the Government please confirm that the qualified testing organization for this project will in fact be required to be “independent of the supplier, manufacturer, and installer of the equipment,” “a first-tier subcontractor,” and not “a second-tier subcontractor?”","Confirmed , the qualified testing organization must be independent of the supplier, manufacturer, and installer of the equipment.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+21,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet: 
+Detail: 
+Spec:  Section 26 08 00 – Apparatus Inspection and Testing
+
+Question:  Subpart 1.2 – Related Requirements of Section 26 12 19 – Pad-Mounted, Liquid-Filled, Medium-Voltage Transformers of the specifications states, “Section 26 08 00 APPARATUS INSPECTION AND TESTING applies to this section, with the additions and modifications specified herein.”  However, Section 26 12 19 – Pad-Mounted, Liquid-Filled, Medium-Voltage Transformers of the specifications is missing from the list of specification sections included within Subpart 3.1 of Section 26 08 00 of the specifications.
+
+Will the Government please clarify if Section 26 12 19 – Pad-Mounted, Liquid-Filled, Medium-Voltage Transformers of the specifications should be added to the list of specification sections included within Subpart 3.1 of Section 26 08 00 of the specifications?","Concur, updated.",Updated spec/dwg included,,rfi_log.xlsx,2026-10-04 00:53:24
+22,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  General
+Sheet:  CS502
+Detail: 
+Spec:  Section 01 50 00 – Temporary Construction Facilities and Controls
+
+Question:  Subparts 2.3.2, 2.3.3, and 3.6.2 of Section 01 50 00 of the specifications specify the that temporary chain-link fencing is to be “6 feet high.”  However, details H1, H8, and H15 on Sheet ID CS502 of the contract drawings indicate that the temporary chain-link fencing is to be 7’-0” high.
+
+Will the Government please confirm our understanding that the temporary chain-link fencing is only required to be 6’-0” (not 7’-0”) high for this project?",6' high temporary fencing is correct.  CS502 detail to be updated.,Updated spec/dwg included,,rfi_log.xlsx,2026-10-04 00:53:24
+23,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  General
+Sheet:  CS502
+Detail: 
+Spec:  Section 01 50 00 – Temporary Construction Facilities and Controls
+
+Question:  When constructing the long runs of new duct banks not located within the two larger Limit of Construction Areas—for example, duct bank A1/ES502 that runs between the PV area and the Generator/BESS area, and duct bank H11/ES501 that runs between the Generator/BESS area and existing Building 678—will the Government please confirm our understanding that the Contractor will be able to utilize temporary orange safety fencing for these areas (in lieu of temporary chain-link fencing that will be provided around the PV area, Generator/BESS area, and temporary trailer area)?
+
+This would seem logical, as the long runs of new duct banks type work is more linear/utility in nature.
+
+If our understanding is not correct, and the Government will require the Contractor to utilize temporary chain-link fencing in these duct bank areas as well, please clarify.",Long utility runs may be indicated with orange safety fence in lieu of temporary chain link fence.,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+24,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Structural
+Sheet:  CS111, S-501
+Detail: 
+Spec: 
+
+Question:  Will the Government please clarify which detail is applicable to the 16’ x 20’ Electrical Equipment Pad indicated on Sheet ID CS111 of the contract drawings—detail A1 or detail K15 on Sheet ID S-501 of the contract drawings?",Detail K15 on sheet S-501 is to be used for Electrical Equipment Pad and Switchgear Pad,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+25,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Mechanical
+Sheet:  M-501
+Detail: 
+Spec: 
+
+Question:  Note(s) 2 and 3 with the Natural Gas Pressure Regulator With Meter detail J14 on Sheet ID M-501 of the contract drawings contemplates “confirm[ing]” the natural gas regulator assembly layout and pad size with the “Utility Provider.”  However, the contract drawings and specifications do not include any information associated with any “Utility Provider[s].”
+
+If the Contractor is required to coordinate with and/or have any work performed by any “Utility Provider” (for any type of utility on this project), will the Government please update the contract documents to clarify the following:
+•	Point of contact and contact information for the Utility Provider(s) representative(s).
+•	What specific work is to be performed by the Utility Provider(s)?
+•	What specific work is to be coordinated with the Utility Provider(s)?
+•	Who (the Government or the Contractor) is required to contract with the Utility Provider(s)?  If the Contractor is required to contract with the Utility Provider(s), please clarify the amount of costs/fees that the Contractor is required to include in their bid amount for any payments (if there are any payments) required to be paid to the Utility Provider(s).",The natural gas service is by NJNG. NJNG installs the gas service and meterset. All piping after the meterset is the responsibility of the contractor. JBMDL to confirm NJNG POC to be used and contract delineation.,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+26,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet:  ED401, ES401
+Detail: 
+Spec: 
+
+Question:  Sheet Keynote 3 on Sheet ID ED401 of the contract drawings states, “Disconnect and remove existing service transformer. Maintain existing secondary feeders for re-use. Refer to ES100 series for additional information.”
+
+Sheet Keynote 4 on Sheet ID ES401 of the contract drawings states, “Splice existing secondary transformer feeders to new MC-1 feeders in above grade pullbox.”
+
+Will the Government please confirm our understanding that the existing concrete pad (for the existing service transformer that is to be removed) may be reused for the new electrical pullbox?
+
+If a new concrete pad is required, please clarify such.","The design intent is to utilize the existing concrete pad to house the new electrical pull box. The new installation must be made weatherproof and secure. The contractor may utilize the existing pad if the necessary conditions can be met, or provide new if needed.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+27,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet:  ED401
+Detail: 
+Spec: 
+
+Question:  Sheet Keynote 2 on Sheet ID ED401 of the contract drawings states, “Disconnect and remove existing metal enclosed medium voltage load interrupter switch, SW-A11.”
+
+Will the Government please confirm our understanding that the existing concrete pad (for the existing interrupter switch that is to be removed) may remain in place (and not require removal)?","Confirmed, existing concrete pad for the existing interrupter switch may remain.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+28,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet: ED401 
+Detail: 
+Spec: 
+
+Question:  Sheet Keynote 10 on Sheet ID ED401 of the contract drawings states, “Disconnect and remove existing primary ductbank from transformer T3-A11 and medium voltage load interrupter switch back to existing to remain manhole A7.”
+
+Will the Government please confirm our understanding that the existing ductbank (whether it be concrete encased or non-concrete encased) may remain and be abandoned in place?  (It is understood that the existing electrical cables would still need to be removed.)
+
+This would be logical, as it appears the existing ductbank is routed below other existing equipment and utilities and would be inaccessible for removal.","This must be approved by JBMDL. Suggest keeping the design intent the same and during construction, it can be a deduct option of JBMDL approves.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+29,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Architectural
+Sheet: 
+Detail: 
+Spec:  Section 09 06 00 – Schedules for Finishes // Section 09 90 00 – Paints and Coatings
+
+Question:  Subpart(s) 2.1.1.1 – Paint and 2.3 – Placement Schedule of Section 09 06 00 of the specifications describe “Exposed galvanized steel (conduit),” “above ground conduits,” and “new at grade elec. service equip. and cabinets” (at “B678 exterior wall of main elec. room”) as requiring painting.  Additionally, Subpart 1.1.3a.(1) – Mechanical and Electrical Painting of Section 09 90 00 of the specifications describes “Exposed conduit and at grade electric service equipment” as requiring painting.
+
+It is unclear as to exactly which items the Government will require field-painting.
+
+Is our understanding correct, that the only field-painting (of “[e]xposed conduit and at grade electric service equipment”) required will be of the conduit/box/fittings exposed on the exterior wall of Building 678 (as indicated by detail A13 / ES507)?
+
+If field-painting of any other new electrical equipment (such as the two (2) generators, three (3) BESS, switchgear enclosure [and adjacent electrical panel enclosures], above-grade pullbox, pad-mounted switch, pad-mounted transformer, and electrical equipment enclosures located to the plan east of the PV Array area) is required, will the Government please clarify such?
+
+Generally, the specifications for the new electrical equipment described above only require factory-finishing of the enclosures.  Further, if custom-color factory-finishing is required, please clarify such.","Concur, only field painting required is at the B678 facility.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+30,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Quality Control
+Sheet: 
+Detail: 
+Spec:  Section 01 45 35 – Special Inspections
+
+Question:  The “Schedule of Special Inspections” mentioned in Subpart 1.2 of Section 01 45 35 of the specifications is missing from the attachments to that section.  (It appears the “Statement of Special Inspections” was inadvertently attached twice.)
+
+Will the Government please provide the “Schedule of Special Inspections?”","Concur, this attachment has been sent to USACE for inclusion in the documents.",Correct attachment sent to USACE for inclusion in the set.,,rfi_log.xlsx,2026-10-04 00:53:24
+31,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Mechanical
+Sheet:  M-701 through M-705
+Detail: 
+Spec: 
+
+Question:  Is there a specific DDC control contractor that the Contractor will be required to utilize to perform the DDC controls (UMCS) related work for this project?",JBMDL to confirm if preferred controls contractor is required and provide contact information if applicable.,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+32,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet:  M-702
+Detail: 
+Spec: 
+
+Question:  Note 3 on Sheet ID M-702 of the contract drawings states, “120-volt single phase power connection junction boxes have been provided for use to power DDC system components. These junction boxes are shown on the electrical power plan drawings. The DDC controls contractor is responsible for all power wiring and components downstream of these junction boxes and verifying the quantity and location of the junction boxes is adequate. Additional power connections are the responsibility of the DDC controls contractor.”
+
+We are unable to locate where these “120-volt single phase power connection junction boxes” are shown on the electrical power plan drawings.
+
+Will the Government please clarify where these items are shown?",Mechanical drawings M-702 has been updated. The intent is to utilize the existing 120 volt single phase power connection junction box located in the main electrical room of B678.,Updated spec/dwg included,,rfi_log.xlsx,2026-10-04 00:53:24
+33,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet:  E-002
+Detail: 
+Spec: 
+
+Question:  General Note 2 on Sheet ID E-002 of the contract drawings makes mention of “utility interconnection requirements.”
+
+Since this project is a design-bid-build type project, will the Government please confirm our understanding that by constructing the new work per the requirements contained throughout the contract drawings and specifications, that all “utility interconnection requirements” will be satisfied?
+
+If anything, additional is required (above and beyond what is indicated within the contract documents), please clarify.","Correct, coordinate with JBMDL and the COR for these connections, but all must be completed by the Contractor.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+34,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet:  EP701
+Detail: 
+Spec: 
+
+Question:  The Partial One-Line Diagram A – New Work detail A1 on Sheet ID EP701 of the contract drawings shows two (2) “100% Rated Load Bank[s]”—one load bank at each new generator.
+
+It is unclear who provides these load banks.
+
+Will the Government please clarify if the load banks are:
+1)	Temporary or permanent?
+2)	Provided by the Government or by the Contractor?
+3)	To be provided in accordance with some specification?","These are temporary load banks to be provided by the contractor, in accordance with 26 32 15 and generator manufacturer requirements.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+35,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Architectural
+Sheet: 
+Detail: 
+Spec:  Section 09 90 00 – Paints and Coatings
+
+Question:  Subpart 1.6.2 – Coating Contractor’s Qualification of Section 09 90 00 of the specifications includes requirements regarding the experience of the coating contractor.  However, it appears that the Government may have inadvertently included Subpart 1.6.3 – SSPC QP 1 Certification of Section 09 90 00 of the specifications in the specifications as well.
+
+Subpart 1.6.3 states, ""Contractors that perform surface preparation or coating application on steel substrates must be certified by the Society for Protective Coatings
+(formerly Steel Structures Painting Council) (SSPC) to the requirements of SSPC QP 1 prior to Contract award, and must remain certified while accomplishing any surface preparation or coating application.""
+
+Per the SSPC website (now AMPP), QP 1 certification is primarily meant to attest to the ability to apply coatings on complex structures, such as bridges, industrial tanks, marine vessels, water/wastewater facilities, and power plants.
+
+Additionally, the UFGS 09 90 00 – Paints and Coatings provides guidance for the designer, stating, ""Use bracket option below concerning SSPC QP 1 only when industrial coatings are required. Painting qualifications for projects such as BEQ's, training facilities and general administration buildings do not require QP 1 certification.""
+
+The painting for this project does not appear to fall within the categories of structures typically reserved for the requirements of SSPC QP 1.
+
+This requirement will prohibit local experienced, small business painting subcontractors from being able to perform the work and will result in a substantial increase in the cost of this work, which will be reflected in the prime contractors' bids submitted to the Government.
+
+SSPC QP 1 certified painting contractors typically do not perform painting work for the types of surfaces that are required to be painted for this project.
+
+Based on the guidance provided in UFGS 09 90 00 and the explanations provided above, will the Government please remove the requirement for the use of SSPC QP 1 certified painting contractors from the specifications for this project?","Concur, will strike the requirement for SSPC QP 1.  Similar to RFI-08 response.",Updated spec/dwg included/ Redundant with RFI-08,,rfi_log.xlsx,2026-10-04 00:53:24
+36,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Structural
+Sheet: 
+Detail: 
+Spec:  Section 03 30 00 – Cast-In-Place Concrete
+
+Question:  Subpart 1.6.9c – Laboratory Accreditation – Contractor Quality Control of Section 03 30 00 of the specifications states, ""All sampling and testing must be performed by an approved, onsite, independent, accredited laboratory.""
+
+Will the Government please confirm our understanding that the intent of the referenced specification is that the validated testing laboratory representative(s) be on-site to collect and prepare specimen and conduct testing that is required on-site; however, the actual testing laboratory facility is not required to be physically on-site during the performance of the contract?","Confirmed, the testing laboratory facility is not required to be physically on-site.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+37,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Structural
+Sheet:  S-001
+Detail: 
+Spec: 
+
+
+Question:  Geotechnical, Source Note 1 on Sheet ID S-001 of the contract drawings states, “Geotechnical Report: JB MDL EV Charging Infrastructure Lakehurst Naval Engineering Station, GEI Consultants, Inc. December 2024.”
+
+Will the Government please provide the bidders with the referenced geotechnical report?","BMcD has no problem with the Contractor reviewing the Geotech Report.  If USACE agrees, please provide to the Contractor.  It is presently in an attachment of the Design Analysis.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+38,"DAVID BOLAND, INC",PM,46269,"1.	Discipline:  Contracting
+Sheet: 
+Detail: 
+Spec:  Section 01 11 00 – Summary of Work
+
+Question:  Will the Contractors and subcontractors be required to make payment for access badges in order to timely access Joint Base MDL (Lakehurst) on a daily basis?","No, payments are not required.",,,rfi_log.xlsx,2026-10-04 00:53:24
+39,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  General
+Sheet: 
+Detail: 
+Spec:  Section 01 45 00 – Quality Control
+
+Question:  Subpart 1.6.2.2 – Quality Control (QC) Manager, Qualifications of Section 01 45 00 of the specifications requires the Quality Control (“QC”) Manager to “possess at least a Bachelor's degree in engineering, architecture, or construction management, with a current professional engineer registration in a US State or Territory or a current licensed architect in a US State or Territory . . .”
+
+The requirements for the QC Manager to be a Professional Engineer (“PE”) or Licensed Architect appear to be excessive for the level of complexity of the project.  This requirement is more commonly found on design-build projects; however, this project is a design-bid-build project.
+
+Will the Government please consider removing the requirement for the QC Manager to have a “current professional engineer registration in a US State or Territory or a current licensed architect in a US State or Territory” from the requirements for this project?
+
+This would be more in line with the type and complexity of the project, and would avoid eliminating a large pool of capable and experienced potential QC Managers.","BMcD will need USACE approval to remove this requirement.  While we agree that this is not a large project, it is somewhat complex given the equipment and phasing involved.  Our recommendation is to bid as designed.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+40,"DAVID BOLAND, INC",PM,46269,"1.	Discipline:  Contracting
+Sheet: 
+Detail: 
+Spec:  Section 01 35 26 – Governmental Safety Requirements
+
+Question:  Will the Government please confirm our understanding that, for this project, the Site Safety and Health Officer (“SSHO”) is to be assigned no other duties other than SSHO?
+s.","Yes, SSHO is to be assigned, no other duties.",,,rfi_log.xlsx,2026-10-04 00:53:24
+41,"DAVID BOLAND, INC",PM,46269,"1.	Discipline:  Contracting
+Sheet: 
+Detail: 
+Spec:  Section 01 45 00 – Quality Control
+
+Question:  Subpart 1.6.2.1 – Quality Control (QC) Manager, Duties of Section 01 45 00 of the specifications states, “In addition to implementing and managing the QC program, the QC Manager may perform the duties of Project Superintendent.”
+
+Will the Government please confirm our understanding that the QC Manager will in fact be able to also perform the duties for Project Superintendent for this project?",The quality control manager (QC) is to follow the responsiblities as outlined in section 01 45 00 supart 1.6.2.1.,,,rfi_log.xlsx,2026-10-04 00:53:24
+42,"DAVID BOLAND, INC",CT,46269,"1.	Discipline:  Contracting
+Sheet: 
+Detail: 
+Spec:  Standard Form 1442
+
+Question:  The solicitation indicates that the bids are due to 2:00 p.m. on Monday, 28 September 2026.
+
+We respectfully request that the Government consider shifting the bid due date to another business day.
+
+A Monday morning bid due date significantly limits the contractor’s ability to finalize bids after the close of business on the preceding day, as during the weekend, subcontractors, suppliers, and other key personnel are generally unavailable to respond to last-minute questions, provide clarifications, resolve discrepancies, and submit revised pricing.
+
+In addition, many subcontractors and suppliers routinely submit their final quotes on the last business day before the bid due date.  A Monday morning bid due date essentially eliminates the opportunity for meaningful review, coordination, and confirmation of those quotes before submitting the bids.
+
+Providing a bid due date on another business day would allow the contractors to complete appropriate and thorough review, improve the accuracy and completeness of the bids, and encourage greater competition, ultimately benefiting the Government through more competitive pricing.","The Government has evaluated the request to shift the bid due date. Due to strict fiscal year-end funding availability constraints, the deadline cannot be extended beyond the end of the fiscal year.
+
+To maximize competition and accommodate contractor coordination needs as much as possible, the Government is granting a partial extension. The bid due date is hereby shifted from Monday, 28 September 2026, to Wednesday, 30 September 2026 at 2:00 PM EDT.
+
+This change is officially incorporated into the solicitation under Amendment 0004. Offerors must acknowledge this amendment in their proposals.",,,rfi_log.xlsx,2026-10-04 00:53:24
+43,"DAVID BOLAND, INC",PM,46269,"1.	Discipline:  Contracting
+Sheet: 
+Detail: 
+Spec:  Section 01 30 00 – Administrative Requirements
+
+Question:  Subparts 1.14 through 1.14.1g of Section 01 30 00 of the specifications require formal partnering be conducted for this project.
+
+Subpart 1.14f states, “Host follow-on Partnering Sessions at three- to six-month intervals or more frequently if needed and lasting generally a half day or less.  Attendees need only be those required to resolve current issues.  The same Facilitator used in the Initial Partnering session must lead the follow-on sessions unless an alternative is permitted by the Contractor Officer.”
+
+Will the Government please clarify the following:
+1)	Will the follow-on partnering sessions be held in-person or virtually?
+2)	Will the facilitator be required to attend the follow-on partnering sessions in-person or virtually?",For both questions the contractor is to coordianted with the contracting officer.,,,rfi_log.xlsx,2026-10-04 00:53:24
+44,"DAVID BOLAND, INC",PM,46269,"1.	Discipline:  General
+Sheet: 
+Detail: 
+Spec:  Section 01 32 01.00 10 – Project Schedule
+
+Question:  Subpart 3.6.1 – Periodic Schedule Update Meetings of Section 01 32 01.00 06 of the specifications states, "" The Contractor scheduler must attend in person unless virtual attendance is approved by Contracting Officer.”
+
+With the user-friendliness of current technology, it has become customary for the Scheduler to participate in update meetings virtually.
+
+Will the Government please consider allowing the Scheduler to attend and perform their duties virtually during the Periodic Schedule Update Meetings?
+
+Allowing the Scheduler to participate virtually will increase efficiency due to having more direct access to the required technology, without sacrificing the effectiveness of the meetings.",The scheduler may attend virtually if approved by the contract officer further the contract is awarded as stated in the specifications.,,,rfi_log.xlsx,2026-10-04 00:53:24
+45,"DAVID BOLAND, INC",CT,46269,"1.	Discipline:  Contracting
+Sheet: 
+Detail: 
+Spec:  Section 00 72 00 – General Conditions
+
+Question:  Will the Government please clarify if a sales tax exemption is applicable for this project?","FAR Clause 52.229-3, ""Federal, State, and Local Taxes,"" included in this solicitation (page 37 of the solicitation document), states that the contract price includes all applicable Federal, State, and local taxes and duties. The clause also outlines the process for price adjustments if tax exemptions are granted. Per FAR Subpart 29.3, the U.S. Government is generally exempt from direct state and local taxes. However, the applicability of a sales tax exemption on purchases made by the contractor for this project depends on the laws of the state of New Jersey. The contractor is responsible for determining the applicability of any tax exemptions and for obtaining any necessary exemption certificates.",,,rfi_log.xlsx,2026-10-04 00:53:24
+46,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet:  EG101 through EG502
+Detail: 
+Spec:  Section 26 41 00 – Lightning Protection System
+
+Question:  Section 26 41 00 – Lightning Protection System is included in the specifications, and includes generic lightning protection system requirements.  However, neither the specifications nor the contract drawings indicate specifically where the lightning protection system is to be provided.  Sheet IDs EG101 through EG502 of the contract drawings indicates certain grounding and bonding requirements; however, do not clarify where lightning protection system(s) are specifically required.
+
+Will the Government please clarify where the lightning protection system(s) is (are) required to be provided?","Lightning protection must be provided for all new exterior equipment associated with the microgrid. This include lighting protection for the PV Array, all exterior site lighting (Shown on ES503 detail A12), Natural Gas Generators, and Battery Energy Storage System (BESS).",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+47,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet:  ES401
+Detail: 
+Spec: 
+
+Question:  HH-12 is indicated on Sheet ID ES401 of the contract drawings; however, HH-12 is not included in the Handhole Schedule on the Electrical Handhole detail A7 on Sheet ID ES503 of the contract drawings.
+
+Will the Government please add HH-12 and the relevant information to the refenced Handhole Schedule?","Provide handhole size of 36""Lx24""Wx18""D",Updated spec/dwg included,,rfi_log.xlsx,2026-10-04 00:53:24
+48,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet:  EP701
+Detail: 
+Spec: 
+
+Question:  General Sheet Note 4 on Sheet ID EP701 of the contract drawings states, “As soon as practical after award, Contractor must connect a power meter to the main service at SWGR-1 and record the power for at least 30 days. This data must be submitted to the 87 CES and COR for review at least six weeks prior to any equipment submittals.”
+
+Will the Government please clarify if this power meter is required to be permanent (and remain in place)?
+
+Additionally, will the Government please clarify if this power meter is the power meter (“DM”) indicated on Sheet ID EP707 of the contract drawings?","General Note 4 on EP701 requires only a temporary power meter to accurately record and measure the existing electrical load to the facility. The multi-function digital meter ""MFM"" is a fixed permanent meter that should be installed in accordance with the contract drawings.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+49,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet:  ES102, EP701
+Detail: 
+Spec: 
+
+Question:  The size/characteristics of the new pad-mounted medium-voltage switch indicated by Sheet Keynote 2 on Sheet ID ES102 of the contract drawings does not match the size/characteristics of the new pad-mounted medium-voltage switch indicated by the Partial One-Line Diagram A – New Work detail A1 on Sheet ID EP701 of the contract drawings.
+
+Will the Government please clarify this discrepancy?",The ratings on EP701 is correct. ES102 will be updated to reflect those ratings,Updated spec/dwg included,,rfi_log.xlsx,2026-10-04 00:53:24
+50,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet:  ES103, EP701
+Detail: 
+Spec: 
+
+Question:  The size/characteristics of the new pad-mounted utility transformer indicated by Sheet Keynote 6 on Sheet ID ES103 of the contract drawings does not match the size/characteristics of the new pad-mounted utility transformer indicated by the Partial One-Line Diagram A – New Work detail A1 on Sheet ID EP701 of the contract drawings.
+
+Will the Government please clarify this discrepancy?",The ratings on EP701 are correct. ES103 is updated to reflect those ratings,Updated spec/dwg included,,rfi_log.xlsx,2026-10-04 00:53:24
+51,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet: 
+Detail: 
+Spec:  Section 48 18 00 – Battery Energy Storage System
+
+Question:  Will the Government please provide the basis-of-design manufacturer for the BESS(s) that was used in development of the specifications and contract drawings?",We can provide the Basis of Design for USACE to distribute to the contractors.  We do not have a J&A and have not sole-sourced the design.  Please let BMcD know if the separate Basis of Design documents are needed (they are presently in the Design Analysis).,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+52,"DAVID BOLAND, INC",JBMDL,46269,"1.	Discipline:  General
+Sheet: 
+Detail: 
+Spec:  Section 01 50 00 – Temporary Construction Facilities and Controls
+
+Question:  Will the Government please confirm our understanding that the Contractor will not be charged for the natural gas usage that will be required to start up, test, inspection, and commission the microgrid system and components between the time of equipment start-up through substantial completion of the project?","Generally, the contractor is responsible for all utility usasge until after final inspection, testing, and acceptance by the government.",,,rfi_log.xlsx,2026-10-04 00:53:24
+53,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet: 
+Detail: 
+Spec:  Section 26 37 13 – Microgrid Control System
+
+Question:  Will the Government please provide the basis-of-design manufacturer for the microgrid control system that was used in development of the specifications and contract drawings?",Schneider Electric: C&I Microgrid Flex ECC,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+54,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet: 
+Detail: 
+Spec:  Section 26 32 15 – Engine-Generator Set Stationary, 15-2500 KW, With Auxiliaries
+
+Question:  Will the Government please provide the basis-of-design manufacturer for the generator sets that was used in development of the specifications and contract drawings?",Cummins C500N6B,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+55,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet: 
+Detail: 
+Spec:  Section 26 31 00 – Facility-Scale Solar Photovoltaic (PV) Systems
+
+Question:  Will the Government please provide the basis-of-design manufacturer for the facility-scale solar photovoltaic (PV) system that was used in development of the specifications and contract drawings?",PV Modules: Mission Solar Energy P-PERC Bifacial 144HC 550W. Inverter: CPS SCH100/125KTL-DO/US-600. Combiner: SMA String-Combiner.,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+56,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Civil
+Sheet:  C-002
+Detail: 
+Spec: 
+
+Question:  Existing Condition Note 6 on Sheet ID C-002 of the contract drawings states, “Special handling and consideration is required for excavated soils thought to contain contaminated substances.”
+
+Since the contract drawings (and specifications) do not indicate (specify) any ""excavated soils thought to contain contaminated substances,"" the bidders cannot determine prior to bidding the project the extent to which any existing soils may or may not be contaminated.
+
+Therefore, will the Government please confirm our understanding that, if contaminated soils are actually encountered during construction, the Government will consider the additional work a change and will issue an equitable adjustment for the costs and impacts from this changed work?
+
+If not, will the Government please clarify to the bidders the quantity of contaminated soils removal the bidders are to include in their bid amounts?",This would be handled as and unforeseen circumstance.,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+57,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  General
+Sheet: 
+Detail: 
+Spec:  Section 01 78 00 – Closeout Submittals
+
+Question:  Requirements related to “Advanced Modeling” are included within Section 01 78 00 of the specifications.
+
+Will the Government please clarify if “Advanced Modeling” will in fact be required for this project?","This would include Civil 3D and any associated BIM Modeling software, rather than simple 2D CAD for the construction records.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+58,"DAVID BOLAND, INC",AE/JBMDL,46269,"1.	Discipline:  General
+Sheet: 
+Detail: 
+Spec:  Section 01 57 19 – Temporary Environmental Controls
+
+Question:  Subpart 1.5 – Special Environmental Requirements of Section 01 57 19 of the specifications states, “Comply with the special environmental requirements listed here and attached at the end of this section.  The Contractor is responsible for preparing the technical application, paying all fees, and securing the approved NJDEP Air Quality Permit modification in coordination with JB MDL Environmental prior to the delivery or installation of the generators.”
+
+Will the Government please provide the bidders with a copy of the “special environmental requirements,” as these requirements are not attached at the end of the section?
+
+Also, will the Government please provide the bidders with a copy of the “technical application,” clarify the amount of fees, and providing any other specific requirements necessary to secure the “approved NJDEP Air Quality Permit modification” that will be required for this project?",BMcD has not been provided this information.  Suggestion to bid as designed. JBMDL:It is generally a contractor responsibility to obtrain all applications external to the base/government. All special environmental requipments are listed in quotes section otherwise.,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+59,"DAVID BOLAND, INC",AE/JBMDL,46269,"1.	Discipline:  General
+Sheet: 
+Detail: 
+Spec:  Section 01 57 19 – Temporary Environmental Controls
+
+Question:  Subpart 3.5.1 – Preconstruction Air Permits of Section 01 57 19 of the specifications states, "" Notify the Air Program Manager, through the Contracting Officer, at least 6 months prior to bringing equipment, assembled or unassembled, onto the Installation, so that air permits can be secured.  Necessary permitting time must be considered in regard to construction activities.  Clean Air Act (CAA) permits must be obtained prior to bringing equipment, assembled or unassembled, onto the Installation.  Permits will be provided by the Government.""
+
+Will the Government please clarify whether or not these requirements are applicable to the contract and if the Contractor will in fact be required to ""Notify the Air Program Manager . . . at least 6 months prior to bringing equipment . . . onto the Installation, so
+that air permits can be secured?""
+
+If so, will the Government please clarify to the bidders the ""Necessary permitting time [that] must be considered in regard to construction activities?""","Permitting requirements are indicated for the Generators in the design documents JBMDL:Need clarification on the question. It appears the quoted section states the answer. By contacting the contracting officer, it is implied that the permits will be required. Additionally, the 6 months priort to bringing equipment explicitly states the time frame required to backwards plan.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+60,"DAVID BOLAND, INC",JBMDL,46269,"1.	Discipline:  General
+Sheet:  C-002
+Detail: 
+Spec: 
+
+Question:  Record Drawing Note 1 on Sheet ID C-002 of the contract drawings states, “Contractor must maintain updated record drawings at all times through the duration of the project. Construction record drawings in CAD and GIS format must be submitted to the COR.  As-builts for all utility systems must be field surveyed and stamped by licensed surveyor in the state of New Jersey.”
+
+Will the Government please confirm that the Contractor (not the Government) will be responsible for collecting the GIS data for this project?
+
+(We are asking because certain bases require this information to be collected by a government-operated GIS team.)",This is generally a contractor responsibility for JBMDL.,,,rfi_log.xlsx,2026-10-04 00:53:24
+61,"DAVID BOLAND, INC",AE/PM,46269,"1.	Discipline:  General
+Sheet:  C-002
+Detail: 
+Spec: 
+
+Question:  Record Drawing Note 4 on Sheet ID C-002 of the contract drawings requires the Contractor to provide a planimetric and topographic (3D digital mapping and digital terrain modeling) as-built survey of the project site.
+
+Will the Government please clarify if the Contractor is required to provide this as-built survey of all areas included within the Limit of Construction indicated on the contract drawings for this project?",Concur,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+62,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Structural
+Sheet:  S-501
+Detail: 
+Spec:  Section 31 00 00 – Earthwork
+
+Question:  The Typical Exterior Pad Detail K15 on Sheet ID S-501 of the contract drawings indicates that 2’-0” of new non-frost susceptible fill is required to be placed below the new exterior pads.  Subparts 2.1.1, 3.4.5, and 3.6.2 of Section 31 00 00 of the specifications specify the extent of the structural excavation and backfill/compaction of this structural fill (“excavate the entire foundation footprint area and at least 5 feet beyond, to the deeper of 4 feet below existing grade or 2 feet below bottom of footings”).
+
+Will the Government please clarify if this undercutting and backfill/compaction with structural fill is required beneath each and every new concrete pad constructed for this project?","Confirmed. Last sentence of first paragraph of Specification Section 31 00 00 3.4.5 has been amended to read ""For new pavement areas including exterior concrete pads, over-excavate to a minimum of 24-inches below bottom of new pavement / pad base course, scarify, moisture condition and compact to at least 95 percent.",Updated spec/dwg included,,rfi_log.xlsx,2026-10-04 00:53:24
+63,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Civil
+Sheet: 
+Detail: 
+Spec:  Section 32 11 26 – Hot-Mix Bituminous Base Course for Roads and Streets
+
+Question:  Subpart 1.5.2 – Test Section of Section 32 11 26 of the specifications states, “At the start of plant operation, prepare a quantity of the mixture sufficient to construct a test section at least 100 feet long and two spreader widths wide. Place, spread, and compact the mixture with equipment to be used in the project and in accordance with requirements specified herein.  Construct a cold joint between spreader widths. Test and evaluate the test section and conform to all specified requirements.  If tests indicate that the pavement does not conform to the tolerances of Table 1, remove and construct additional test sections and sample for conformance to specification requirements. Do not start production of the bituminous base course mixture without approval.”
+
+The quantity of asphalt pavement specified for this test section greatly exceeds the small quantity of asphalt pavement required for this project.
+
+Will the Government please confirm our understanding that the test section requirements specified by Subpart 1.5.2 of Section 32 11 26 of the specifications are not applicable to this project?","Subpart 1.5.2 should read ""A test section will not be required.""",Updated spec/dwg included,,rfi_log.xlsx,2026-10-04 00:53:24
+64,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet: 
+Detail: 
+Spec:  Section 26 37 13 – Microgrid Control System
+
+Question:  Subpart 1.12 – Regulatory Requirements of Section 26 37 13 of the specifications states, “Comply with all utility, local, state, and federal regulatory requirements related to this microgrid.  Submit Regulatory Compliance Documentation demonstrating compliance with all utility interconnect contract stipulations.  Ensure that no installation or testing done before the final SAT invalidates any warranties.  Submit a table listing all regulatory requirements and confirmations of compliance.  Update this list as required and make it available for review when asked. Equip the microgrid control system with functionality required to meet the control and communication requirements of the external grid.  Secure certification from the connected external grid provider or operator during the interconnect application process.”
+
+Since this project is a design-bid-build type project, will the Government please confirm our understanding that by constructing the new work per the requirements contained throughout the contract drawings and specifications, that all requirements of Subpart 1.12 referenced above will be satisfied?
+
+If anything additional is required (above and beyond what is indicated within the contract documents), please clarify.","This is standard spec language and the contractor must adhere to it, no change required.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+65,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet: 
+Detail: 
+Spec:  Section 48 18 00 – Battery Energy Storage Systems
+
+Question:  Subpart 3.9.4 – BESS Tests of Section 48 18 00 of the specifications states, “Contractor must provide a 1.5MW, 480V load bank to perform testing of the BESS and natural gas generators isolated from the base-wide primary electrical service.”
+
+Will the Government please confirm our understanding that this load bank is temporary (“to perform testing”) and that the Contractor is not required to provide a permanent load bank for this project?
+
+If a permanent load bank is required, please provide a specification for the load bank.",The load bank is temporary and required only to preform testing of the systems.,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+66,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet: 
+Detail: 
+Spec:  Section 48 18 00 – Battery Energy Storage Systems
+
+Question:  Subpart 2.3.1 – Grid Outage Scenario of Section 48 18 00 of the specifications states, “The BESS must be demonstrated to perform on a recurring basis to ensure the 87 CES's desired site resilience and energy assurance. This interval testing frequency must occur approximately every twelve months following final acceptance to ensure provision of power to the site in the event of a utility-provided power outage or interruption.  This periodic demonstration must stagger months, seasons, load, time of day, and weather variabilities, but must be conducted at least every twelve (12) months.  In the event of an actual utility power interruption exceeding 1 days, the BESS's performance will satisfy this requested demonstration, thereby resetting the interval to twelve (12) months prior to the next required demonstration. Any deficiencies or anomalies beyond expected design parameters, in an actual event or demonstration event, are to be reported to the 87 CES within twenty-four (24) hours in writing, with recommended remediation or corrective steps to prevent recurrence.”
+
+Will the Government please clarify who (the Contractor or the Government) is required to perform these demonstrations “every twelve months following final acceptance?”
+
+If the Contractor is required to perform these demonstrations, please clarify for how many twelve-month periods the Contractor is required to perform these demonstrations after final acceptance?",The contractor is required to perform the first demonstrations.  JBMDL must confirm if they plan to perform the rest of these demonstrations or contract someone.,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+67,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet:  E-001, E-002
+Detail: 
+Spec: 
+
+Question:  General Demolition Note 6 on Sheet ID E-002 of the contract drawings contemplates “temporary electrical installations or relocations . . . required to maintain system operability during construction.”  However, the contract drawings and specifications also allow for outages that are necessary to perform the work.
+
+Will the Government please confirm our understanding that the outage(s) necessary to perform the work by way of the phasing requirements indicated on Sheet ID E-001 of the contract drawings will be allowed and that “temporary electrical installation or relocations” will not be required during these outages?","While outages are unavoidable, the mission of the building 678 is considered critical and if outages can be avoided while using temporary power they should be. All planned outages in accordance with sheet E-001 of the contract drawings must be coordinated and approved by COR, 87 CES, and the user.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+68,"DAVID BOLAND, INC",AE,46269,"Discipline:  Electrical
+Sheet:  EP704 through EP707
+Detail: 
+Spec:  Section 26 37 13 – Microgrid Control System
+
+Question:  Subpart 2.1.3.12 – Control System Resilience and Redundancy of Section 26 37 13 of the specifications states, “Redundant communication paths are to be established using ring topology.”  Further, Subpart 3.9.1 – Wire and Cable of Section 26 37 13 of the specifications states, “Additional raceways not shown in the drawings but required for proper system operation must be provided and installed.  Utilize separate raceways to segregate cables for redundant equipment and systems.”
+
+The contract drawings very specifically indicate the quantity and the routing of the new fiber optic and CAT6 cabling, including installing a certain number of new fiber optic cables through the new telecommunications duct banks and building in order to tie in to certain existing and new equipment.  The contract drawings do not indicate that any redundant communication paths and/or separate raceways are to be provided.
+
+Will the Government please confirm that the Contractor is only required to provide the new fiber optic and CAT6 cabling quantities and routing indicated by the contract drawings?
+
+If the Government is going to require additional, redundant communications paths and/or separate raceways, please update the contract drawings to indicate these additional requirements.","Drawings EP704-707 indicate requirements for the particular Basis of Design documents. Depending on what equipment is submitted upon, these requirements may change in type, size, and/or quantity. Some redundant pathways are included in contract documents such as on drawings ES501/502. Provide appropriate quantities and sizes of raceways where contract documents call for them and in accordance with manufacturer recommendations and requirements for a complete and fully operational system.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+69,"DAVID BOLAND, INC",AE/JBMDL/PM,46269,"1.	Discipline: Contracting
+Sheet: 
+Detail: 
+Spec:  Section 01 50 00 – Temporary Construction Facilities and Controls
+
+Question:  Subpart 3.2.2 – Payment for Utility Services of Section 01 50 00 of the specifications states, “The Government will make all reasonably required utilities available from existing outlets and supplies, as specified in the Contract.  Unless otherwise provided in the Contract, the amount of each utility service consumed will be charged to or paid at prevailing rates charged to the Government or, where the utility is produced by the Government, at reasonable rates determined by the Contracting Officer.  Carefully conserve utilities furnished without charge. Reasonable amounts of the following utilities will be made available at the prevailing rates.”
+
+Will the Government please clarify if the Contractor will be required to pay for temporary utilities (usage fees) (i.e., water, sewer, and electrical, as applicable) during construction (including for use at the Contractor’s temporary project site office trailers), or if the Government will provide usage of these temporary utilities (usage fees) at no cost to the Contractor?
+
+Additionally, if the Contractor will be required to pay for temporary utilities (usage fees), will the Government please provide the “prevailing rates” the Contractor is required to pay for the various utilities?","any utilities are provided (regardless of usage cost) it is the contractors responsibility to install all required connections, metering and/or utility extensions at their cost.
+
+the utility rates are:
+Electric - $0.247610 per kWh
+Water - $8.574110 per thousand gallons
+Sewage - $6.011510 per thousand gallons (billed at 80% of water consumption)
+Natural Gas - $2.779790 per CCF",,,rfi_log.xlsx,2026-10-04 00:53:24
+70,"DAVID BOLAND, INC",JBMDL,46269,"1.	Discipline:  General
+Sheet: 
+Detail: 
+Spec:  Section 01 50 00 – Temporary Construction Facilities and Controls
+
+Question:  Will the Government please clarify who owns and operates the domestic water utilities on the base (so that we may coordinate temporary service)?",JBMDL owns the domestic water utility system on-base and provides all domestic water.,,,rfi_log.xlsx,2026-10-04 00:53:24
+71,"DAVID BOLAND, INC",JBMDL,46269,"1.	Discipline:  General
+Sheet: 
+Detail: 
+Spec:  Section 01 50 00 – Temporary Construction Facilities and Controls
+
+Question:  Will the Government please clarify who owns and operates the sanitary sewer utilities on the base (so that we may coordinate temporary service)?",The Ocean County Utilities Authority provides sanitary sewer utilities on the Lakehurst Annex.,,,rfi_log.xlsx,2026-10-04 00:53:24
+72,"DAVID BOLAND, INC",JBMDL,46269,"1.	Discipline:  General
+Sheet: 
+Detail: 
+Spec:  Section 01 50 00 – Temporary Construction Facilities and Controls
+
+Question:  Will the Government please clarify who owns and operates the natural gas distribution utilities on the base?","PSE&G owns the on-base natural gas distribution system on the Lakehurst Annex, and provides natural gas to the base.",,,rfi_log.xlsx,2026-10-04 00:53:24
+73,"DAVID BOLAND, INC",JBMDL,46269,"1.	Discipline:  General
+Sheet: 
+Detail: 
+Spec:  Section 01 50 00 – Temporary Construction Facilities and Controls
+
+Question:  Will the Government please clarify who owns and operates the electrical distribution utilities on the base (so that we may coordinate temporary service)?","JBMDL owns the electrical distribution system on the Lakehurst Annex, and JCP&L provides the electric utility.",,,rfi_log.xlsx,2026-10-04 00:53:24
+74,"DAVID BOLAND, INC",AE,46269,"1.	Discipline:  Electrical
+Sheet:  EP701
+Detail: 
+Spec: 
+
+Question:  Some of the “Sets,” “Wires,” and “Conduit” listed on the Feeder Schedule included on Sheet ID EP701 of the contract drawings do not match the information contained within the Partial One-Line Diagram A – New Work detail A1 included on the same sheet.
+
+Will the Government please clarify these discrepancies?",Feeder schedule is updated to match the diagram.,Updated spec/dwg included,,rfi_log.xlsx,2026-10-04 00:53:24
+RFIs received after the due date,,,,,,,,rfi_log.xlsx,2026-10-04 00:53:24
+75,Carbon Recall Chattanooga,AE,46275,"RFI-01: Transformer Impedance Table (Section 26 12 19, para. 2.2.2.e)
+The “Minimum tested percent impedance at 85 degrees C” table lists the following values: .50 for units 75kVA and below; .87 for 112.5-300kVA; .03 for 500kVA; .32 for 750kVA and above. These values do not correspond to valid percent-impedance ratings for transformers of these sizes and appear to be missing a leading digit. Please confirm the correct minimum tested percent impedance applicable to the 2,300kVA pad-mounted transformer (XFMR-1) specified for this project.","Concur, Section 26 12 19 para 2.2.2.e has been updated",Updated spec/dwg included,,rfi_log.xlsx,2026-10-04 00:53:24
+76,Carbon Recall Chattanooga,AE,46275,"RFI-02: Engine-Generator Duty Classification (Sections 26 32 15 and 26 37 13)
+Section 26 32 15, Engine-Generator Parameter Schedule, lists the power rating for NG-1 and NG-2 as “Emergency Standby.” However, Section 26 37 13, Microgrid Control System, paragraph 1.2.2, requires the same generators to be capable of operating as the grid-forming resource during black start/islanded operation or as a base-loaded resource in parallel with the energy storage system or utility grid. These two duty classifications are not equivalent. Please clarify whether NG-1 and NG-2 are required to be rated and EPA-certified for continuous/prime (non-emergency) duty in addition to standby duty, as this affects equipment selection, cost, and emissions certification.",The NG-1 and NG-2 generators are to be rated and EPA-certified for continious/prime in addition to standby duty.,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+77,Carbon Recall Chattanooga,AE,46275,"RFI-03: Handhole HH-12 Dimensions (Sheet ES503, Handhole Schedule)
+HH-12 is shown on the electrical site and duct bank drawings (including the MC-1 to HH-12 and HH-12 to SWGR-1 duct bank runs) but is not included in the Handhole Schedule on Sheet ES503, which lists dimensions only for HH-1 through HH-11. Please provide the dimensions for HH-12.","Provide handhole size of 36""Lx24""Wx18""D",Drawing update provided as part of RFI-47,,rfi_log.xlsx,2026-10-04 00:53:24
+78,Carbon Recall Chattanooga,AE,46275,"RFI-04: Manhole MH-1 Dimensions
+MH-1 is shown as a new manhole on the electrical site and duct bank drawings, but no manhole schedule with per-unit dimensions has been provided (only a generic “Electrical Maintenance Hole” detail without a dimension callout tied to MH-1 specifically). Please provide the dimensions and structural detail applicable to MH-1.","MH size is delegated, based on project detail requirements.  Refer to ES503 for minimum requirements for Manhole.    Refer to ES501 for quantity and sizes of conduit for MH opening and size requirements.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+79,Carbon Recall Chattanooga,AE,46275,"RFI-05: XFMR-1 Sound Level and Efficiency Rating (Section 26 12 19, paras. 2.2.2.f and 2.2.2.1)
+The audible sound level and DOE efficiency tables in Section 26 12 19 list values only for discrete kVA sizes (2,000kVA and 2,500kVA) and do not include the specified 2,300kVA rating for XFMR-1. Please confirm whether the 2,500kVA bracket values govern for this unit, or whether a standard 2,500kVA transformer may be furnished in lieu of a non-standard 2,300kVA unit.","The 2,500kVA bracket values will govern for this unit. A 2,500kVA transformer may not be furnished in lieu of non-standard 2,300kVA unit.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+80,Carbon Recall Chattanooga,AE,46275,"RFI-06: Battery Energy Storage System Configuration (Section 48 18 00, para. 2.7)
+The drawings show three separate BESS units (BESS-1, BESS-2, BESS-3), each rated 500kW, and Section 48 18 00, paragraph 2.7, states that “each BESS container must act as an independent unit” with its own dedicated Battery Management System. Please confirm whether the Government requires three physically separate, standalone BESS units as shown, or whether a single larger BESS unit providing equivalent aggregate power and energy capacity would be an acceptable substitution.",The design and specifications dictate that three physically separate standalone BESS units must be provided as described in the specifications and construction drawings. A single larger BESS unit providing equivalent aggregate power and energy capability would not be acceptable.,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+81,Carbon Recall Chattanooga,AE,46275,"RFI-07: PV Array Foundation System (Section 26 31 00, para. 2.5.1)
+Section 26 31 00, paragraph 2.5.1, designates a ballasted foundation as the primary foundation system for the PV array mounting structure, with driven pile, shallow foundation, or helical pile as alternatives if site conditions require. Please confirm that a ballasted ground-mount foundation system is acceptable for this site, provided the system meets all specified wind, seismic, and snow load requirements and is supported by a site-specific geotechnical report.",Ballast is acceptable,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+82,Carbon Recall Chattanooga,AE,46275,"RFI-08: PV Racking Material (Section 26 31 00, paras. 2.5.a and 2.5.f)
+Section 26 31 00, paragraph 2.5.a, requires racking components to be designed for a minimum 50-year design life and to comply with UL 2703. Paragraph 2.5.f further states “Use a galvanized steel support structure. Do not use wood or plastic components for support.” We request clarification on whether this prohibition is intended to exclude engineered, high-performance polymer racking systems specifically, as distinct from conventional wood or general-purpose plastic components. Advanced structural polymer racking products are available that are domestically manufactured (supporting Buy American/domestic content compliance on this federal contract), are UL 2703 compliant, and are warrantied to meet or exceed the 50-year design life and structural, seismic, wind, and snow load requirements of this section. Please confirm whether such a domestically produced, high-performance polymer racking system would be considered an acceptable alternate to galvanized steel, provided it meets or exceeds all other performance requirements of Section 26 31 00.",A high-performance polymer racking system would not be considered acceptable.,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+83,Carbon Recall Chattanooga,AE,46275,"RFI-09: Basis-of-Design Equipment Manufacturers
+Several of the performance specifications in this solicitation - including the pad-mounted transformer (Section 26 12 19), switchboard/microgrid controller (Sections 26 24 13 and 26 37 13), engine-generators (Section 26 32 15), and battery energy storage system (Section 48 18 00) - contain detailed performance parameters (e.g., impedance, sound levels, efficiencies, dimensions, and control functionality) consistent with a specific manufacturer’s standard product line. To ensure our sourcing and pricing reflect equipment that will be found compliant, please identify the basis-of-design manufacturer(s) and model(s), if any, used to develop these specifications, or confirm that no single manufacturer’s product was used as the basis of design and that any product meeting the stated performance criteria will be accepted.",Microgrid Microgrid: Schneider Electric: C&I Microgrid Flex ECC NG | Generator Cummins C500N6B | PV Modules: Mission Solar Energy P-PERC Bifacial 144HC 550W. | Inverter: CPS SCH100/125KTL-DO/US-600. | Combiner: SMA String-Combiner.,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+84,Carbon Recall Chattanooga,AE,46275,"RFI-10: Buy American / Trade Agreements Act Applicability
+Section 00 45 00 lists DFARS 252.225-7020, Trade Agreements Certificate, and DFARS 252.225-7000, Buy American-Balance of Payments Program Certificate, as certifications applicable “as indicated by the Contracting Officer,” with both boxes left unmarked. DFARS 252.225-7001, Buy American and Balance of Payments Program, is separately incorporated by reference at the standard clauses section. Please confirm: (a) whether this acquisition is subject to the Trade Agreements Act (i.e., whether the Trade Agreements Certificate applies), or whether it is a Buy American Act/Balance of Payments Program acquisition only; and (b) whether domestic content requirements apply on a component-by-component basis to major equipment items (PV modules, inverters, racking, battery energy storage system, pad-mounted transformer, switchboard, and engine-generators), or only at the end-product level.",BMcD considers this an RFI that should be reviewed by USACE as we did not edit this specification.,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+85,Carbon Recall Chattanooga,AE,46275,"RFI-11: NDAA Section 154 Covered Battery Restriction
+Section 154 of the FY2024 National Defense Authorization Act prohibits the Department of Defense, beginning October 1, 2027, from obligating or expending funds to procure a battery produced by Contemporary Amperex Technology Company (CATL), BYD Company, Envision Energy, EVE Energy Company, Gotion High-Tech Company, Hithium Energy Storage Technology Company, or their successors, where any of these entities assembled or manufactured the final battery or provided a majority of its components. Given that this contract’s period of performance may extend at or beyond that date, please confirm: (a) whether the Government requires contractor certification, at time of proposal or prior to procurement of the BESS, that battery cells and modules are not sourced from any of the entities listed above; (b) whether this requirement applies regardless of when during contract performance the battery procurement or delivery occurs; and (c) whether a waiver process is available or anticipated to be available if a fully compliant, domestically available alternative is not cost-competitive or has an unworkable lead time.",BMcD considers this an RFI that should be reviewed by USACE as this requirement listed is coming into effect during construction and would be part of the DIV00 specs.,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+86,Willdan,CT,46279,"FAR Clause 52.211-12 Liquidated Damages Construction states that “Contractor shall pay
+liquidated damages to the Government in the amount of $3,246.00 for each calendar day
+of delay until the work is completed or accepted.”
+
+Will the Government accept a proposed limit to liquidated damages? For example, can
+liquidated damages be capped at a percentage of the construction costs?",,,,rfi_log.xlsx,2026-10-04 00:53:24
+87,Willdan,PM,46279,"1.3 PROJECT SCHEDULER QUALIFICATIONS section states:
+The Designated Project Scheduler must have prepared and maintained at least three
+previous construction schedules for projects of similar size and complexity to this
+contract, using Primavera P6.
+
+Is Microsoft Project experience and scheduling software an acceptable alternative to
+Primavera P6?",Experience in Primavera P6 is preffered / recommended.,,,rfi_log.xlsx,2026-10-04 00:53:24
+88,"DAVID BOLAND, INC",JBMDL,46280,"1.	Discipline:  Cybersecurity Classification
+Sheet: 
+Detail: 
+Spec:  25 10 10 Utility Monitoring and Control System (UMCS) Front End and Integration
+
+Question: In accordance with Figure 3 – AMRS Meter Specifications, the AMRS Electric Meter shall meet Department of Defense cybersecurity standards.  
+
+Will the Government please clarify the following:
+1.	Who will be providing the Authorization to Operate (ATO) for the AMRS Meters used on the project?
+2.	Will the project Security Rating be classified as Moderate or Low?","For Question 1, there is no need to get a separate ATO as AFCEC already has a pre-approved list of meters authorized for use.
+(These are listed in the Meter Data Management Plan attached. On page 15 there is a list of AMRS compliant meters.) 
+
+The base preferences are the Schneider Ion 8650 or the Siemens 9410.
+(Note: We were recently informed that the Schneider Ion 8650 is being phased out and is no longer in production.)
+
+For Question 2, Please assume low level for now, JBMDL needs to confirm.",,,rfi_log.xlsx,2026-10-04 00:53:24
+89,"DAVID BOLAND, INC",AE,46282,"1.	Discipline: Natural Gas (Mechanical)
+Sheet: CS112
+Detail: A1
+Spec: Section 01 57 19 Temporary Environmental Controls
+
+Question:
+In order to properly quote the new Natural Gas line contractors need to know the size and pressure of the existing Gas Line.
+
+Will the Government please clarify the pipe size and pressure (psi) of the existing Natural Gas line?","The existing line size is 2"". NJNG installs the gas service and meterset. All piping after the meterset is the responsibility of the contractor. The intended pressure of the piping downstream of the meterset is 1 PSI.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+90,"DAVID BOLAND, INC",AE,46282,"1.	Discipline:  Electrical
+Sheet: ES101
+Detail: 
+Spec:  26 31 00 Facility Scale Solar Photovoltaic PV Systems
+
+1.	Question: Sheet ID ES101 System Description Tables indicate base bid as System Size DC 311.04 kW and the option System Size DC 103.68 kW (totaling 414.72 kW DC). However, Subpart 2.1.1, b. (1) of Section 26 31 00 of the specifications indicates 480 minimum rated kW DC output. Will the Government please clarify the correct total (base bid and the option) minimum rated kW DC output.",Minimum size is dependant on the DC/AC ratio of the inverter submitted. Spec section 26 31 00 revised to show 414 KW.,Updated spec included,,rfi_log.xlsx,2026-10-04 00:53:24
+91,"DAVID BOLAND, INC",PM,46282,"1.	Discipline: Electrical
+Sheet: ES503
+Detail: J7
+Spec: Section 09 06 00 – Schedules for Finishes & 09 90 00 – Paints and Coatings
+
+Question:  Detail J7 on Sheet ID ES503 and Paragraph 2.3 of Section 09 06 00 of the specifications indicates that we are to paint above ground conduits at the exterior wall of the main electrical room of Building 678.  Additionally, that same paragraph also specifies new at grade electrical service equipment and cabinets at the exterior wall of Building 678 are to be painted. 
+
+However, during the site visit it was noted that none of the existing exterior conduit or electrical equipment attached to this exterior wall are painted. 
+
+Will the Government consider removing the requirement for painting the new conduit and electrical service equipment located at the exterior wall of the main electrical room in order to maintain a consistent appearance for this exterior wall?","The Government will not remove the requirement, proceed as it is shown and written.",,,rfi_log.xlsx,2026-10-04 00:53:24
+92,"Dobco, Inc.",CT,46281,Please provide the anticipated award date and anticipated notice to proceed date.,,,,rfi_log.xlsx,2026-10-04 00:53:24
+93,"Dobco, Inc.",CT,46281,Please confirm this project is subject to NJ Prevailing Wage and no Project Labor Agreement is to be part of the project.,,,,rfi_log.xlsx,2026-10-04 00:53:24
+94,"Dobco, Inc.",PM,46281,Please confirm that all field testing and inspections will be performed and paid by the owner.,"No, contarctor responsible for all field testing and isnpections.",,,rfi_log.xlsx,2026-10-04 00:53:24
+95,"Dobco, Inc.",CT,46281,"Please confirm that the owner is tax exempt, and a tax-exempt certificate will be provided to the contractor upon award so no sales taxes should be counted during the bid.",,,,rfi_log.xlsx,2026-10-04 00:53:24
+96,"Dobco, Inc.",CT,46281,Please confirm that the contractor have to perform certain percentages of the scope of work by its own forces.,,,,rfi_log.xlsx,2026-10-04 00:53:24
+97,"Dobco, Inc.",JBMDL/AE,46281,Please confirm that NO site contaminants are existing on any of the site soils or ground water.,There are no known contaminated soils or contaminated groundwater on project site. Contractor will be required to test soils if contamination is discovered or suspected per the requirements of the drawings and specifications.,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+98,"Dobco, Inc.",AE,46281,Please confirm that all soils meet or under the NJDEP residential requirements.,"Existing soil information from conditions observed in 2024 can be found in the Geotechnical Report by GEI Consultants, Inc.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+99,"Dobco, Inc.",CT,46281,Please confirm that the bidder must have prior experience constructing similar facilities in active areas similar to the site herein.,Similar experience is recommended.,,,rfi_log.xlsx,2026-10-04 00:53:24
+100,Richard Group LCC,CT,46286,1.	Is hand delivery the only acceptable method of bid submission? We would like to request email submission also be accepted.,,,,rfi_log.xlsx,2026-10-04 00:53:24
+101,Richard Group LCC,AE,46286,"2.	Electrical grounding details on EG502 depict the new fencing to be barbed-wire, while civil details on CS502 show a plain chain-link fence. Please clarify if barbed-wire fence is to be provided.","Barbed-wire is not required.  Follow the Civil details and specifications for the fencing.  The Electrical details are for grounding only, the background fencing is notional.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+102,Richard Group LCC,AE,46286,"3.	HH-12 is not listed in the schedule provided on ES503, please provide dimensions.","Provide handhole size of 36""Lx24""Wx18""D",Drawing update provided as part of RFI-47,,rfi_log.xlsx,2026-10-04 00:53:24
+103,Richard Group LCC,AE,46286,"4.	Please provide dimensions/size of new electrical manhole, MH-1.","MH size is delegated, based on project detail requirements.  Refer to ES503 for minimum requirements for Manhole.    Refer to ES501 for quantity and sizes of conduit for MH opening and size requirements.",No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+104,Richard Group LCC,AE,46286,"5.	Exterior electrical duct bank sections show MaxCell mesh innerduct in technology conduits, is this required for both fiber and Cat6A or just fiber?",Mesh inneruct is required for both Fiber and Cat6A.,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+105,Richard Group LCC,AE,46286,6.	What is the existing BAS system for integration of new controls/point monitoring?,Existing protocol is BACnet with Niagara. JBMDL to confirm existing system.,No spec/drawing update required.,,rfi_log.xlsx,2026-10-04 00:53:24
+106,Richard Group LCC,CT,46286,7.	Does USACE have a target date for when funding will be available?,,,,rfi_log.xlsx,2026-10-04 00:53:24
+107,Richard Group LCC,CT,46286,"8.	Will the Government allow the contractor to adjust bid pricing to accommodate material escalations, in the event the solicitation is awarded beyond the 90-day hold period?",,,,rfi_log.xlsx,2026-10-04 00:53:24
+108,,,,,,,,rfi_log.xlsx,2026-10-04 00:53:24
+109,,,,,,,,rfi_log.xlsx,2026-10-04 00:53:24
+110,,,,,,,,rfi_log.xlsx,2026-10-04 00:53:24
+111,,,,,,,,rfi_log.xlsx,2026-10-04 00:53:24

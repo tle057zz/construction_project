@@ -1,0 +1,34 @@
+relationship fact_date
+	fromColumn: fact_rfi.date_key
+	toColumn: dim_date.date_key
+	fromCardinality: many
+	toCardinality: one
+	crossFilteringBehavior: oneDirection
+
+relationship fact_from_party
+	fromColumn: fact_rfi.from_party_key
+	toColumn: dim_party.party_key
+	fromCardinality: many
+	toCardinality: one
+	crossFilteringBehavior: oneDirection
+
+relationship fact_tasked_party
+	fromColumn: fact_rfi.tasked_party_key
+	toColumn: dim_tasked_party.party_key
+	fromCardinality: many
+	toCardinality: one
+	crossFilteringBehavior: oneDirection
+
+relationship fact_discipline
+	fromColumn: fact_rfi.discipline_key
+	toColumn: dim_discipline.discipline_key
+	fromCardinality: many
+	toCardinality: one
+	crossFilteringBehavior: oneDirection
+
+relationship fact_issue_type
+	fromColumn: fact_rfi.issue_type_key
+	toColumn: dim_issue_type.issue_type_key
+	fromCardinality: many
+	toCardinality: one
+	crossFilteringBehavior: oneDirection

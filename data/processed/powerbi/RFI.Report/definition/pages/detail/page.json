@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "detail",
+  "displayName": "RFI detail",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "type": "Drillthrough",
+  "visibility": "HiddenInViewMode",
+  "pageBinding": {
+    "name": "drill_rfi",
+    "type": "Drillthrough",
+    "acceptsFilterContext": "Default",
+    "parameters": [
+      {
+        "name": "rfi_id",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fact_rfi"
+              }
+            },
+            "Property": "rfi_id"
+          }
+        }
+      }
+    ]
+  }
+}

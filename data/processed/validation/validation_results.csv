@@ -1,0 +1,10 @@
+check,result,detail
+columns,PASS,"rfi_id, from_party, tasked_to, date_received, question, response, notes, status, response_available"
+row_count,PASS,107 rows
+rfi_id_sequence,PASS,RFI-001 to RFI-107
+question_present,PASS,0 blank
+from_party_present,PASS,0 blank
+tasked_to_present,PASS,0 blank
+date_received_iso,PASS,0 invalid
+status_matches_response,PASS,0 mismatches
+excluded_rows_absent,PASS,"5 excluded, 0 still in the clean table"

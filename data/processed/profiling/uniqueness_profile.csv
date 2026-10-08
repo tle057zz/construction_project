@@ -1,0 +1,11 @@
+column,unique_values,non_blank_rows
+rfi_number,112,112
+from_party,6,107
+tasked_to,10,107
+date_received,9,107
+question,107,107
+response,93,99
+notes,6,72
+status_raw,0,0
+source_file,1,112
+ingestion_timestamp,1,112

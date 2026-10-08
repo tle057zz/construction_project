@@ -1,0 +1,107 @@
+/// One row per RFI.
+table fact_rfi
+	column rfi_key
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: rfi_key
+	column rfi_id
+		dataType: string
+		summarizeBy: none
+		sourceColumn: rfi_id
+	column date_key
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: date_key
+	column from_party_key
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: from_party_key
+	column tasked_party_key
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: tasked_party_key
+	column discipline_key
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: discipline_key
+	column issue_type_key
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: issue_type_key
+	column question
+		dataType: string
+		summarizeBy: none
+		sourceColumn: question
+	column response
+		dataType: string
+		summarizeBy: none
+		sourceColumn: response
+	column notes
+		dataType: string
+		summarizeBy: none
+		sourceColumn: notes
+	column status
+		dataType: string
+		summarizeBy: none
+		sourceColumn: status
+	column response_available
+		dataType: string
+		summarizeBy: none
+		sourceColumn: response_available
+	column drawing_update_required
+		dataType: string
+		summarizeBy: none
+		sourceColumn: drawing_update_required
+	column spec_update_required
+		dataType: string
+		summarizeBy: none
+		sourceColumn: spec_update_required
+	column document_update_required
+		dataType: string
+		summarizeBy: none
+		sourceColumn: document_update_required
+	column question_word_count
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: question_word_count
+	column response_word_count
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: response_word_count
+	column 'Document Impact' =
+			SWITCH (
+				TRUE (),
+				fact_rfi[drawing_update_required] = "Yes"
+					&& fact_rfi[spec_update_required] = "Yes", "Both",
+				fact_rfi[drawing_update_required] = "Yes", "Drawing only",
+				fact_rfi[spec_update_required] = "Yes", "Specification only",
+				fact_rfi[document_update_required] = "No", "No update",
+				"Unknown"
+			)
+		dataType: string
+		summarizeBy: none
+
+	column 'Question Summary' =
+			VAR FullText = fact_rfi[question]
+			VAR Preview = LEFT ( FullText, 140 )
+			RETURN
+				IF ( LEN ( FullText ) <= 140, FullText, Preview & "..." )
+		dataType: string
+		summarizeBy: none
+	partition fact_rfi = m
+		mode: import
+		source = ```
+				let
+					FilePath = #"DataFolder" & "fact_rfi.csv",
+					Source = Csv.Document(File.Contents(FilePath), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+					Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+					Typed = Table.TransformColumnTypes(Promoted, {{"rfi_key", Int64.Type}, {"rfi_id", type text}, {"date_key", Int64.Type}, {"from_party_key", Int64.Type}, {"tasked_party_key", Int64.Type}, {"discipline_key", Int64.Type}, {"issue_type_key", Int64.Type}, {"question", type text}, {"response", type text}, {"notes", type text}, {"status", type text}, {"response_available", type text}, {"drawing_update_required", type text}, {"spec_update_required", type text}, {"document_update_required", type text}, {"question_word_count", Int64.Type}, {"response_word_count", Int64.Type}})
+				in
+					Typed
+			```

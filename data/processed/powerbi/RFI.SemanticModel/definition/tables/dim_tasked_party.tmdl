@@ -1,0 +1,23 @@
+/// Same party list as dim_party, used for the tasked-to relationship.
+table dim_tasked_party
+
+	column party_key
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: party_key
+
+	column party_name
+		dataType: string
+		summarizeBy: none
+		sourceColumn: party_name
+
+	partition dim_tasked_party = calculated
+		mode: import
+		source = ```
+				SELECTCOLUMNS (
+					dim_party,
+					"party_key", dim_party[party_key],
+					"party_name", dim_party[party_name]
+				)
+			```
